@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form action="">
+    <form action="#" method="post">
+      <h1>სარეგისტრაციო ფორმა</h1>
+      <!-- fieldset info 1 -->
       <fieldset>
         <legend>პირადი ინფორმაცია</legend>
-        <div>
+        <div class="input-group">
           <label for="fname">სახელი</label>
-          <input type="text" id="fname" required />
+          <input type="text" id="fname" name="fname" required />
         </div>
         <div>
           <label for="lname">გვარი</label>
-          <input type="text" id="lname" required />
+          <input type="text" id="lname" name="lname" required />
+        </div>
+        <div>
+          <label for="email">ელფოსტა</label>
+          <input type="email" id="email" name="email" required />
         </div>
       </fieldset>
+      <!-- fieldset info 2 -->
       <fieldset>
-        <legend>პირადი ინფორმაცია</legend>
+        <legend>საკონტაქტო ინფორმაცია</legend>
         <div>
-          <label for="fname">სახელი</label>
-          <input type="text" id="fname" required />
+          <label for="phone">ტელეფონის ნომერი</label>
+          <input type="tel" id="phone" name="phone" />
         </div>
         <div>
-          <label for="lname">გვარი</label>
-          <input type="text" id="lname" required />
+          <label for="address">მისამართი</label>
+          <input type="text" id="address" name="address" />
         </div>
       </fieldset>
+
+      <button type="submit">რეგისტრაცია</button>
     </form>
 
     <script src="js/script.js"></script>
